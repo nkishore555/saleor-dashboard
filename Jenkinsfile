@@ -13,8 +13,6 @@ pipeline {
             steps {
                 sh 'docker image build -t kishorekrrish/saleor-dashboar:DEV1234 .'
             }
-        }
-        
-          
+        }       
     }
 }
