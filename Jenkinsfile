@@ -11,12 +11,13 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t kishorekrrish/saleor-dashboar:DEV123 .'
+                sh 'docker image build -t kishorekrrish/saleor-dashboar:DEV1234 .'
             }
         }
         stage('push image to registry') {
             steps {
-                sh 'docker image push kishorekrrish/saleor-dashboar:DEV123'
+                sh 'docker push kishorekrrish/saleor-dashboar:DEV1234'
+                
             }
         }
     }
